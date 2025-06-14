@@ -1,5 +1,3 @@
-# convert_to_onnx.py
-
 import torch
 from pytorch_model import Classifier, BasicBlock
 
