@@ -20,6 +20,8 @@ WORKDIR /app
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN python convert_to_onnx.py
+
 # Expose the port for Flask app (default port 5000 for Flask)
 EXPOSE 8000
 
